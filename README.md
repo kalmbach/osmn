@@ -35,7 +35,7 @@ search.params
 # and if all is ok, you can execute the query
 search.search
 ```
-You can set any parameter defined in the in the Nominatim wiki page (http://wiki.openstreetmap.org/wiki/Nominatim#Parameters)
+You can set any parameter defined in the Nominatim wiki page (http://wiki.openstreetmap.org/wiki/Nominatim#Parameters)
 ```ruby
 # example parameters
 params = {
@@ -61,7 +61,7 @@ search.params
 # run the query
 search.reverse_geocode
 ```
-You can set any parameter defined in the in the Nominatim wiki page (http://wiki.openstreetmap.org/wiki/Nominatim#Parameters_2)
+You can set any parameter defined in the Nominatim wiki page (http://wiki.openstreetmap.org/wiki/Nominatim#Parameters_2)
 ```ruby
 # example parameters
 params = {
