@@ -21,7 +21,7 @@ module OSMN
     def params=(value)
       if value.is_a? Hash
         value.each do |k,v|
-          @params[k.to_sym] = v unless v.nil?
+          @params[k.to_sym] = v
         end
       end
 
