@@ -1,5 +1,5 @@
 # OSMN
-A Ruby wrapper for the **O**pen **S**treet **M**ap **N**ominatim API.
+A Ruby wrapper for the OpenStreetMap Nominatim API.
 
 > Nominatim is a tool to search osm data by name and address 
 and to generate synthetic addresses of osm points (reverse geocoding). 
