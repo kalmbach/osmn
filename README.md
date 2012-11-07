@@ -4,12 +4,50 @@ A Ruby wrapper for the **O**pen **S**treet **M**ap **N**ominatim API.
 > Nominatim is a tool to search osm data by name and address 
 and to generate synthetic addresses of osm points (reverse geocoding). 
 
-It can be found at http://nominatim.openstreetmap.org 
+Service can be found at http://nominatim.openstreetmap.org 
+API Details can be found at http://wiki.openstreetmap.org/wiki/Nominatim
 
 ## Installation
 
+    $ gem install osmn
 
 ## Usage
+The easy way:
+```ruby
+# search for a place
+OSMN::search('135 pilkington avenue, birmingham')
+
+# convert latitude and longitude into a place
+OSMN::reverse_geocode(52.5487429714954, -1.81602098644987)
+```
+The full control way:
+```ruby
+# search for address
+search = OSMN::Search.new(:addressdetails => 1)
+search.params = {:limit => 1}
+
+# you can revise the params used
+search.params
+# >> {:addressdetails => 1, :limit => 1}
+
+# and if all is ok, you can execute the query
+search.search
+```
+
+```ruby
+# convert lat and long
+search = OSMN::Reverse.new(:lat => 52.5487429714954)
+search.params = {:lon => -1.81602098644987}
+
+# check the params
+search.params
+# >> {:lat => 52.5487429714954, :lon => -1.81602098644987}
+
+# run the query
+search.reverse_geocode
+```
+
+Check the available parameters for each query on the Nominatim Wiki page (http://wiki.openstreetmap.org/wiki/Nominatim)
 
 ## License
 Copyright (c) 2012, Jorge Kalmbach <kalmbach.at.gmail.com>
