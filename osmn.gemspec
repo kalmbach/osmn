@@ -14,10 +14,10 @@ Gem::Specification.new do |gem|
     "LICENSE",
     "Rakefile",
     "lib/osmn.rb",
+    "lib/osmn/structs.rb",
     "lib/osmn/base.rb",
     "lib/osmn/search.rb",
     "lib/osmn/reverse.rb",
-    "lib/osmn/hash.rb",
     "lib/osmn/version.rb",
     "test/test_osmn.rb"
   ]

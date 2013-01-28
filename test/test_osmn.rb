@@ -42,7 +42,7 @@ class Tests < Test::Unit::TestCase
     assert_respond_to(response, :type)
 
     assert_raise NoMethodError do
-      response.address
+      response.address.house_number
     end
   end
 
@@ -86,7 +86,7 @@ class Tests < Test::Unit::TestCase
     assert_respond_to(response, :display_name)
 
     assert_raise NoMethodError do
-      response.address
+      response.address.house_number
     end
   end
 

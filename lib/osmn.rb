@@ -1,8 +1,8 @@
+require 'osmn/structs'
 require 'osmn/base'
 require 'osmn/search'
 require 'osmn/reverse'
 require 'osmn/version'
-require 'osmn/hash'
 
 module OSMN
 
