@@ -10,6 +10,7 @@ module OSMN
     :display_name, 
     :class,
     :type,
+    :importance,
     :address)
 
   Address = Struct.new(
