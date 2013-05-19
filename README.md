@@ -1,4 +1,5 @@
-# OSMN
+# OSMN [![Code Climate](https://codeclimate.com/github/kalmbach/osmn.png)](https://codeclimate.com/github/kalmbach/osmn)
+
 A Ruby wrapper for the OpenStreetMap Nominatim API.
 
 > Nominatim is a tool to search osm data by name and address 
