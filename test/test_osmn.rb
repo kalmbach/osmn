@@ -27,7 +27,7 @@ class Tests < Test::Unit::TestCase
     assert_equal('62762024', response.place_id)
   end
 
-  def test_search
+  def test_search_with_no_details
     response = OSMN::search('135 pilkington avenue, birmingham', 0)[0]
 
     assert_respond_to(response, :place_id)
