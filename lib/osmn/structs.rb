@@ -23,5 +23,6 @@ module OSMN
     :state, 
     :postcode, 
     :country, 
-    :country_code)
+    :country_code,
+    :continent)
 end
