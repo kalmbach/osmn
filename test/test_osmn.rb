@@ -61,6 +61,7 @@ class Tests < Test::Unit::TestCase
     assert_respond_to(response, :class)
     assert_respond_to(response, :type)
     assert_respond_to(response, :address)
+    assert_respond_to(response, :icon)
 
     assert_respond_to(response.address, :house_number)
     assert_respond_to(response.address, :road)
