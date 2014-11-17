@@ -11,7 +11,8 @@ module OSMN
     :class,
     :type,
     :importance,
-    :address)
+    :address,
+    :icon)
 
   Address = Struct.new(
     :house_number, 
